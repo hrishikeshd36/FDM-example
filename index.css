@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  font-size: 35px;
+}
+
+.calculator {
+  max-width: 350px;
+  margin: 100px auto 0;
+  border: black solid 3px;
+}
+.display {
+  color: #fff;
+  background-color: black;
+  text-align: right;
+  padding: 10px 8px;
+  margin-bottom: 0;
+}
+
+.line-1,
+.line-2,
+.line-3 {
+  display: flex;
+}
+.line-1 :nth-child(1) {
+  width: 50%;
+}
+.line-2 div,
+.line-1 :nth-child(2),
+.line-1 :nth-child(3),
+.line-3 :nth-child(2) {
+  width: 25%;
+}
+
+.line-3 :nth-child(1) {
+  width: 75%;
+}
+
+.key {
+  padding: 20px 0;
+  margin: 0;
+  border: black solid 1px;
+  background-color: #eee;
+}
+.line-1 :hover,
+.line-2 :hover,
+.line-3 :hover {
+  background-color: rgba(163, 163, 163, 0.473);
+  cursor: pointer;
+}
+.line-1 :active,
+.line-2 :active,
+.line-3 :active {
+  background-color: rgba(99, 98, 98, 0.473);
+  cursor: pointer;
+}
+
+.orange {
+  background-color: rgb(253, 154, 6);
+  color: #fff;
+}
+
+.orange:hover {
+  background-color: rgb(248, 183, 63);
+  cursor: pointer;
+}
+
+.orange:active {
+  background-color: rgb(245, 163, 10);
+  cursor: pointer;
+}
